@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>Bootstrap 4 Layout</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script src ="/js/characterCreation.js"></script>
+    <script src ="/js/buttonLogic.js"></script>
+</head>
+
+<body>
+
+<div class = "container">
+
+    <div class="jumbotron text-center">
+        <h2 id = "title">You are a placeholder!</h2>
+        <div class = "sub-body">
+            <a class = "btn btn-primary btn-lg" role="button" id = "characterButton">RANDOM CHARACTER</a>
+        </div>
+        <div class = "row">
+            <div class ="col-sm-12 col-md-4">
+                <img src="/assets/Assassin-600x600.png" class="img-fluid img-thumbnail icon" alt="Responsive image" id="assassin">
+            </div>
+            <div class ="col-sm-12 col-md-4">
+                <img src="/assets/Mage-600x600.png" class="img-fluid img-thumbnail icon" alt="Responsive image" id="mage">
+            </div>
+            <div class ="col-sm-12 col-md-4">
+                <img src="/assets/Tank-600x600.png" class="img-fluid img-thumbnail icon" alt="Responsive image" id="tank">
+            </div>
+        </div>
+        </p>
+    </div>
+
+    <div class="row">
+        <div class ="col-sm-12 col-md-4">
+            <div class="card mb-4">
+                <div class = "card-body text-center" id="desccard">
+                    <div class = "sub-body">
+                        <a class = "btn btn-primary btn-sm" role="button" id = "descriptorbtn">CLICK TO LOCK</a>
+                    </div>
+                    <hr/>
+                    <h4 class="card-title">Descriptor</h4>
+                    <hr/>
+                    <h5 id = "descriptor"></h5>
+                </div>
+            </div>
+        </div>
+        <div class ="col-sm-12 col-md-4">
+            <div class="card mb-4">
+                <div class = "card-body text-center" id="classcard">
+                    <div class = "sub-body">
+                        <a class = "btn btn-primary btn-sm" role="button" id = "classbtn">CLICK TO LOCK</a>
+                    </div>
+                    <hr/>
+                    <h4 class="card-title">Class</h4>
+                    <hr/>
+                    <h5 id = "class"></h5>
+                </div>
+            </div>
+        </div>
+        <div class ="col-sm-12 col-md-4">
+            <div class="card mb-4">
+                <div class = "card-body text-center" id="focuscard">
+                    <div class = "sub-body">
+                        <a class = "btn btn-primary btn-sm" role="button" id = "focusbtn">CLICK TO LOCK</a>
+                    </div>
+                    <hr/>
+                    <h4 class="card-title">Focus</h4>
+                    <hr/>
+                    <h5 id = "focus"></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-body text-center" id="savecard">
+                    <div class="sub-body">
+                        <a class="btn btn-primary btn-sm" role="button" id="savebtn">SAVE CURRENT TEMPLATE</a>
+                    </div>
+
+                        <hr/>
+                        <h4>Descriptor</h4>
+                        <h5 id = "savedDescriptor"></h5>
+                        <hr/>
+                        <h4>Class</h4>
+                        <h5 id ="savedClass"></h5>
+                        <hr/>
+                        <h4>Focus</h4>
+                        <h5 id="savedFocus"></h5>
+                    <hr/>
+                    <div class="sub-body">
+                        <a class="btn btn-primary btn-sm" role="button" id="loadbtn">LOAD CURRENT TEMPLATE</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>
